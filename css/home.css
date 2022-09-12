@@ -1,0 +1,57 @@
+.top img{
+    display: none;
+    width: 100%;
+    object-fit: contain;
+    object-position: top;
+    margin-bottom: 68px;
+}
+
+h1{
+    margin-top: 68px;
+}
+
+.main-images{
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 100px;
+}
+
+.main-images img {
+    width: 100%;
+}
+
+.sales{
+    background: #C2185B;
+    padding: 40px 80px;
+    margin-bottom: 100px;
+}
+
+
+@media screen and (min-width: 769px){
+    .top img{
+        display: block;
+    }
+
+    h1{
+        margin-top: 0;
+    }
+
+    .main-images {
+        flex-direction: row;
+        margin-bottom: 200px;
+    }
+
+    .main-images img {
+        width: unset;
+    }
+
+    .sales{
+        background: #C2185B;
+        padding: 60px 80px;
+        margin-bottom: 160px;
+    }
+}

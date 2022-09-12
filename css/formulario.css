@@ -1,0 +1,209 @@
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    padding: 55px 80px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    max-width: 538px;
+    width: 100%;
+}
+
+form h1{
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-size: 39px;
+    line-height: 53px;
+
+    color: #575757;
+    margin-bottom: 36px;
+}
+
+form .label-input, form span{
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+
+    color: #9B9B9B;
+}
+
+form .label-input{
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+form .label-textarea{
+    margin-bottom: 2px;
+}
+
+form span{
+    margin-bottom: 12px;
+    margin-top: 15px;
+}
+
+input[type=text], input[type=email], input[type=tel], select, textarea{
+    width: 100%;
+    max-width: 538px;
+    height: 26px;
+
+    background: #FFFFFF;
+    border: 1px solid #9B9B9B;
+    padding: 0 20px;
+}
+
+textarea{
+    padding: 20px;
+    height: 78px;
+}
+
+.row{
+    display: flex;
+}
+
+.box-inputs-check{
+    flex-direction: column;
+}
+
+input[type=radio], input[type=checkbox]{
+    position: absolute;
+    opacity: 0;
+    height: 0;
+    width: 0;
+}
+
+.label-check-radio, .label-checkbox{
+    display: flex;
+    align-items: center;
+}
+
+.label-check-radio{
+margin-right: 55px;
+}
+
+.label-checkbox{
+margin-right: 15px;
+}
+
+.input-radio, .input-checkbox{
+    height: 15px;
+    width: 15px;
+    border: none;
+    display: block;
+    background: #C4C4C4;
+    margin-right: 3px;
+    transition: all 0.6s;
+}
+
+.input-radio{
+    border-radius: 100px;
+}
+
+input[type=radio] + label span, input[type=checkbox] + label span{
+    font-family: 'Roboto';
+    font-size: 14px;
+    line-height: 16px;
+
+    color: #777777;
+}
+
+input[type=radio]:checked + label .input-radio, input[type=checkbox]:checked + label .input-checkbox{
+    background: #C2185B;
+}
+
+.input-checkbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-checkbox::after {
+    display: none;
+    content: "";
+    width: 2px;
+    border: 1px solid #C4C4C4;
+    height: 5px;
+    transform: rotate(45deg);
+    border-width: 0 2px 2px 0;
+}
+
+input[type=checkbox]:checked ~ .label-checkbox .input-checkbox::after{
+    display: block;
+}
+
+.box-input-file{
+    display: flex;
+    margin-bottom: 22px;
+    margin-top: 22px;
+    align-items: center;
+}
+
+.box-input-file span{
+    margin: 0 10px 0 0;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.box-input-file label {
+    height: 21px;
+    width: 118px;
+    background-color: #C4C4C4;
+
+    font-family: 'Roboto';
+    font-size: 14px;
+    line-height: 16px;
+
+    color: #FFFFFF;
+    text-align: center;
+    
+    display: block;
+}
+
+button{
+    width: 100%;
+    height: 33px;
+    border: none;
+
+    background: #C2185B;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+
+    color: #FFFFFF;
+    margin-bottom: 62px;
+}
+
+.form-description{
+    font-family: 'Open Sans';
+    font-size: 16px;
+    line-height: 22px;
+    
+    color: #575757;
+}
+
+@media screen and (min-width: 1023px){
+    main{
+        flex-direction: row;
+        gap: 40px;
+    }
+}
+
+@media screen and (max-width: 480px){
+    main{
+        padding: 40px;
+    }
+}
+
+@media screen and (min-width: 481px){
+    .box-inputs-check{
+        flex-direction: row;
+    }
+}
