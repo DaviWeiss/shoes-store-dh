@@ -26,10 +26,98 @@ h1{
 
 .sales{
     background: #C2185B;
-    padding: 40px 80px;
+    padding: 40px;
     margin-bottom: 100px;
 }
 
+.sales h2 {
+    font-family: 'Open Sans';
+    font-weight: 800;
+    font-size: 44px;
+    line-height: 60px;
+    color: #FFFFFF;
+    margin-bottom: 54px;
+    text-align: center;
+}
+
+.sales-images{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.shoes {
+    background: #FFFFFF;
+}
+
+.box-detail-shoes{
+    padding: 18px  23px 25px 11px;
+}
+
+.box-detail-shoes h5{
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+
+    color: #000000;
+}
+
+.box-detail-shoes span{
+    font-family: 'Open Sans';
+    font-size: 16px;
+    line-height: 22px;
+    
+    color: #000000;    
+}
+
+.featured-product{
+    padding: 40px 80px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    align-items: center;
+    justify-content: center;
+}
+
+.featured-product div {
+    display: flex;
+    flex-direction: column;
+}
+
+.featured-product div h3{
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-size: 39px;
+    line-height: 53px;
+
+    color: #000000;
+    max-width: 500px;
+    margin-bottom: 10px;
+}
+
+.featured-product div button{
+    background: #C2185B;
+    height: 99px;
+    max-width: 400px;
+    min-width: 280px;
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-size: 39px;
+    line-height: 53px;
+
+    color: #FFFFFF;
+    border: none;
+    margin-bottom: 60px;
+}
+
+.featured-product img {
+    width: 100%;
+}
 
 @media screen and (min-width: 769px){
     .top img{
@@ -41,7 +129,6 @@ h1{
     }
 
     .main-images {
-        flex-direction: row;
         margin-bottom: 200px;
     }
 
@@ -53,5 +140,30 @@ h1{
         background: #C2185B;
         padding: 60px 80px;
         margin-bottom: 160px;
+    }
+
+    .sales-images{
+        flex-direction: row;
+    }
+
+    .featured-product{
+        padding: 60px 80px;
+        margin-bottom: 116px;
+    }
+
+    .featured-product img {
+        width: unset;
+    }
+}
+
+
+@media screen and (min-width: 1280px){
+    .main-images{
+        flex-direction: row;
+    }
+
+    .featured-product{
+        flex-direction: row;
+        align-items: flex-end;
     }
 }
