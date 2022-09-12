@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIme shoes</title>
+    <link href="css/styles.css" rel="stylesheet"/>
+    <link href="css/formulario.css" rel="stylesheet"/>
+</head>
+<body>
+    <header>
+        <a href="./home.html">
+          <img src="images/logo-color.png" alt="Logo da shoes store"/>      
+        </a>
+        <nav>   
+          <ul class="lista-navegacao">
+            <li><a href="#">Todos os produtos</a></li>
+            <li><a href="#">Coleções</a></li>
+            <li><a href="#">Outlet</a></li>
+          </ul>   
+        </nav>
+    </header>
+
+    <main>
+      <form action="#" method="POST">
+          <h1>Faça parte do nosso time</h1>
+          <label class="label-input" for="input-name">Nome: </label>
+          <input id="input-name" type="text" name="name" required />
+
+          <label class="label-input" for="input-email">Email: </label>
+          <input id="input-email" type="email" name="email" required />
+
+          <label class="label-input" for="input-tel">Telefone: </label>
+          <input id="input-tel" type="tel" name="tel" required />
+
+          <label class="label-input" for="dep">Departamentos:</label>
+
+          <select name="dep" id="dep">
+            <option value="tecnologia">Tecnologia</option>
+            <option value="rh">RH</option>
+            <option value="vendas">Vendas</option>
+            <option value="marketing">Marketing</option>
+            <option value="juridico">Jurídico</option>
+          </select>
+
+          <span>Disponibilidade</span>
+
+          <div class="row box-inputs-check"">
+              <input type="checkbox" value="Integral (8h)" name="checkbox-integral" id="checkbox-integral">
+              <label for="checkbox-integral" class="label-checkbox">
+                <div class="input-checkbox"></div>
+                <span>Integral (8h)</span>
+                <span class="check"></span>
+              </label>
+
+              <input type="checkbox" value="Meio período (4h)" name="checkbox-meio" id="checkbox-meio">
+              <label for="checkbox-meio" class="label-checkbox">
+                <div class="input-checkbox"></div>
+                <span>Meio período (4h)</span>
+                <span class="check"></span>
+              </label>
+              
+              <input type="checkbox" value="Freelancer" name="checkbox-freelance" id="checkbox-freelance">
+              <label for="checkbox-freelance" class="label-checkbox">
+                <div class="input-checkbox"></div>
+                <span>Freelancer</span>
+                <span class="check"></span>
+              </label>
+          </div>
+
+          <span>Qual a melhor forma para entrarmos em contato com você?</span>
+
+          <div class="row box-inputs-check">
+              <input type="radio" id="email" name="contact" value="Email">
+              <label for="email" class="label-check-radio">
+                <div class="input-radio"></div>
+                <span>Email</span>
+              </label>
+              
+              <br>
+              
+              <input type="radio" id="call" name="contact" value="Ligacao">
+              <label for="call" class="label-check-radio">
+                <div class="input-radio"></div>
+                <span>Ligação</span>
+              </label>
+              
+              <br>
+              
+              <input type="radio" id="whats" name="contact" value="Whatsapp">
+              <label for="whats" class="label-check-radio">
+                <div class="input-radio"></div>
+                <span>Whatsapp</span>
+              </label>
+          </div>
+
+          <label class="label-input label-textarea" for="message">Mensagem</label>
+
+          <textarea id="message" name="message" rows="4" cols="50"></textarea>
+
+          <div class="box-input-file">
+              <span>Currículo</span>
+              <input type="file" id="resume" name="resume" value="upload">
+              <label for="resume">upload</label>
+          </div>
+
+          <button type="submit">enviar</button>
+      </form>
+      <section>
+        <p class="form-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.   Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </section>
+  
+    </main>
+
+    <footer>
+      <section class="branch-infos">
+        <img src="./images/logo-white.png" alt="Logo footer">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+      </section>
+      <section class="footer-links">
+        <div>
+          <strong>categorias</strong>
+          <a href="#">sandálias</a>
+          <a href="#">botas</a>
+          <a href="#">tênis</a>
+          <a href="#">oxford</a>
+          <a href="#">coturnos</a>
+        </div>
+        <div>
+          <strong>institucional</strong>
+          <a href="#">sobre nós</a>
+          <a href="#">perguntas frequentes</a>
+          <a href="#">política de privacidade</a>
+          <a href="#">rastreamento de pedidos</a>
+          <a href="./formulario.html">trabalhe conosco</a>
+          <a href="#">contato</a>
+        </div>
+      </section>
+    </footer>
+</body>
+</html>
