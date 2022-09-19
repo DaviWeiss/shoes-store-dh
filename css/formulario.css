@@ -179,6 +179,14 @@ button{
 
     color: #FFFFFF;
     margin-bottom: 62px;
+
+    transition: all 1s;
+}
+
+button:hover{
+    color: #C2185B;
+    background: white;
+    border: 1px solid #C2185B;
 }
 
 .form-description{

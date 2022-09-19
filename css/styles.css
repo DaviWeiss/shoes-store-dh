@@ -13,6 +13,22 @@ header {
   box-shadow: 0px 2px 10px 0px #00000040;
 }
 
+.frete{
+  background-color: #C2185B;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+
+.frete span{
+  color: white;
+  font-weight: bold;
+}
+
 nav{
   display: none;
   margin-right: 20px;
